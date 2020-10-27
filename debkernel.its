@@ -1,7 +1,7 @@
 /dts-v1/;
 
 / {
-    description = "Debian kernel image with one blob for the Asus C101 (Bob) and initramfs";
+    description = "Debian kernel image for the Acer Chromebook Tab 10 (scarlet)";
 
     images {
         kernel@1{
@@ -15,8 +15,8 @@
             entry = <0>;
         };
         fdt@1{
-            description = "rk3399-gru-bob.dtb";
-            data = /incbin/("../linux-source-4.19/arch/arm64/boot/dts/rockchip/rk3399-gru-bob.dtb");
+            description = "rk3399-gru-scarlet-inx.dtb";
+            data = /incbin/("../linux-source-4.19/arch/arm64/boot/dts/rockchip/rk3399-gru-scarlet-inx.dtb");
             type = "flat_dt";
             arch = "arm64";
             compression = "none";
